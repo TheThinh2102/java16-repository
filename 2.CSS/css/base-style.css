@@ -165,6 +165,112 @@ clear: left, right, both;
 	background-size: cover;
 }
 
+/*============Ex06================*/
+.ex06-block-md {
+	width: 200px;
+	height: 200px;
+	border: 2px solid #ececec;
+	box-sizing: border-box;
+}
+
+.ex06-bg-orange {
+	background-color: orange;
+}
+
+.ex06-bg-green {
+	background-color: green;
+	
+}
+
+.ex06-bg-blue {
+	background-color: blue;	
+	border-radius: 50%;
+}
+
+.ex06-block-b {
+	position: relative;
+	left: 200px;
+	top: 0px;
+	z-index: 3;
+}
+
+.ex06-block-c {
+	position: relative;
+	left: 400px;
+	top: 0px;
+}
+
+.ex06-parent-block {
+	border: 2px solid red;
+	margin: 0 auto;
+	width: 800px;
+	height: 600px;
+	position: relative;
+}
+
+.page-title {
+	box-sizing: border-box;
+	padding: 6px 0;
+}
+
+.page-title::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.page-title h1{
+	float: left;
+	margin: 0;
+}
+
+.page-title .search-form {
+	float: right;
+}
+
+.search-form label {
+	position: relative;
+	left: 30px;
+	top: 1px;
+}
+
+.search-form input[type='search'] {
+	padding: 2px 2px 2px 30px;
+	margin-right: 10px;
+}
+
+.search-form input[type='button'] {
+	padding: 2px 4px;
+	cursor: pointer;
+}
+
+/*============Ex07================*/
+.ex07-display-parent> * {
+/*
+DISPLAY
+	block: take care to --> with(default 100%) height
+	inline: ignore with height
+					size despends on content;
+	inline-block: using value of with height
+							: do not have break line
+	none
+
+VISIBILITY
+	hidden: same as diplay nont but still keep page size
+*/
+	display: none;
+}
+
+.gradient-block {
+	width: 200px;
+	height: 200px;
+	background: linear-gradient(135deg, #0f4c19 0%,#28d656 49%,#2d0f60 55%,#7db9e8 100%);
+	border: 2px solid #b2609D;
+}
+
+
+
+
 /*============FOOTER================*/
 #footer {
 	color: #cecece;
